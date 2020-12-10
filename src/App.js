@@ -3,8 +3,10 @@ import Main from './components/main';
 import {Navbar, Nav} from 'react-bootstrap'
 import ReactParticles from 'react-particles-js';
 import particlesConfig from './components/particle-config';
+
 function App() {
   return (
+    
     <div>
       <Navbar bg="dark" expand="lg" className='header-color'>
         <Navbar.Brand style={{color: 'white'}} href="/">Portfolio</Navbar.Brand>

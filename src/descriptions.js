@@ -1,7 +1,7 @@
 const topics = [
     {
       name: 'React Router',
-      id: 'react-router',
+      id: 'PHP',
       description: 'Declarative, component based routing for React',
       resources: [
         {
@@ -20,7 +20,7 @@ const topics = [
     },
     {
       name: 'React.js',
-      id: 'reactjs',
+      id: 'PHP',
       description: 'A JavaScript library for building user interfaces',
       resources: [
         {
@@ -39,7 +39,7 @@ const topics = [
     },
     {
       name: 'Functional Programming',
-      id: 'functional-programming',
+      id: 'PHP',
       description: 'In computer science, functional programming is a programming paradigm—a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data.',
       resources: [
         {
@@ -58,7 +58,7 @@ const topics = [
     },
     {
       name: 'React Router',
-      id: 'react-router',
+      id: 'React',
       description: 'Declarative, component based routing for React',
       resources: [
         {
@@ -77,7 +77,7 @@ const topics = [
     },
     {
       name: 'React.js',
-      id: 'reactjs',
+      id: 'React',
       description: 'A JavaScript library for building user interfaces',
       resources: [
         {
@@ -95,8 +95,8 @@ const topics = [
       ]
     },
     {
-      name: 'Functional Programming',
-      id: 'functional-programming',
+      name: 'PHP',
+      id: 'PHP',
       description: 'In computer science, functional programming is a programming paradigm—a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data.',
       resources: [
         {
