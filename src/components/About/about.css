@@ -1,0 +1,44 @@
+.heading-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.icon {
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 1170px) {
+    .icon {
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .icon {
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 1170px){
+.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+    position: absolute;
+    width: 100%;
+    left: 80%;
+    top: 6px;
+    font-size: 16px;
+    font-size: 1rem;
+}
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+    float: right;
+    padding: .8em 0;
+    opacity: .7;
+}
+
+
+.vertical-timeline {
+    max-width: 1140px;
+}
