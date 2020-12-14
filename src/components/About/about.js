@@ -3,12 +3,12 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import {Container, Row, Col, Card, Button, Nav, Image} from 'react-bootstrap';
 import './about.css'
-import DundeeLogo from '../../assets/pictures/UoDLogo.png';
 
 class About extends Component {
     render(){
         return(
             <div className="project-grid">
+                <h1>Education & Work Experience</h1>
                 &nbsp;
                 <Container className="heading-container">
                     <Row>

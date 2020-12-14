@@ -101,3 +101,11 @@
 .nav {
   justify-content: center;
 }
+
+.fullpage-wrapper {
+  z-index: 0;
+}
+
+.navbar {
+  z-index: 1;
+}

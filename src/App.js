@@ -1,14 +1,13 @@
+import React, {Component} from 'react';
 import './App.css';
 import Main from './components/main';
 import {Navbar, Nav} from 'react-bootstrap'
-import ReactParticles from 'react-particles-js';
-import particlesConfig from './components/particle-config';
 
-function App() {
+class App extends Component {
+  render(){
   return (
-    
     <div>
-      <Navbar bg="dark" expand="lg" className='header-color'>
+      <Navbar bg="dark" expand="lg" className='header-color navbar'>
         <Navbar.Brand style={{color: 'white'}} href="/">Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -23,6 +22,7 @@ function App() {
       <Main/>
     </div>
   );
+  }
 }
 
 export default App;
