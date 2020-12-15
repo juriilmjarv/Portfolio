@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import {Container, Row, Col, Card, Button, Nav, Image} from 'react-bootstrap';
-import './about.css'
+import './myjourney.css'
 
 class About extends Component {
     render(){
@@ -17,7 +17,7 @@ class About extends Component {
                         </Col>
                     </Row>
                 </Container>
-                <VerticalTimeline>
+                <VerticalTimeline className="textcolor">
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="2020 - 2021"

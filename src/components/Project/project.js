@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import posts from '../descriptions';
+import posts from '../../descriptions';
 
 
 class Project extends Component {

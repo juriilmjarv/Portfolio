@@ -1,0 +1,27 @@
+.project-grid {
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    top:1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+  }
+
+  .col{
+    flex: 0 0 33.3333333%;
+    max-width: 33.3333333%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+  }
+  
+  
+  .card-centered{
+    float: none;
+    margin: 0 auto;
+  }

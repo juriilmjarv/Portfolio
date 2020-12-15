@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import post from '../descriptions';
+import post from '../../descriptions';
 import {Container, Row, Col, Card, Button, Nav} from 'react-bootstrap';
+import './projects.css';
 
 class Projects extends Component {
 
