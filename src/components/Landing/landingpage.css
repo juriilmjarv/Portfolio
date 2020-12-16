@@ -10,6 +10,42 @@
     height: 100%;
 }
 
+.intro {
+  width: 75%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.intro h1{
+ font-size: 90px;
+}
+
+.intro p {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro h1 {
+    font-size: 50px;
+  }
+  .intro p {
+    font-size: 15px;
+  }
+}
+
+.about-intro{
+  width: 75%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
+}
+
 .circular--portrait {
     position: relative;
     width: 250px;
@@ -64,14 +100,14 @@
 }
 
 .downArrow{
-    padding-top: 5%;
-	bottom: 45%;
-    left: 50%;
+  position: relative;
+  top: 20%;
 }
+
 .bounce {
 	-moz-animation: bounce 3s infinite;
 	-webkit-animation: bounce 3s infinite;
-	animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
 }
 @-moz-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
