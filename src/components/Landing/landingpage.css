@@ -46,18 +46,81 @@
   text-align: left;
 }
 
-.circular--portrait {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: auto;
+.roundedCircle{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 600px) {
+  .roundedCircle{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
 }
   
-  .circular--portrait img {
-    width: 100%;
-    height: auto;
+
+.about-btn{
+  margin: 5px;
+}
+
+.vertical-timeline-element-date{
+  color: white;
+}
+
+@media only screen and (max-width: 1170px) {
+  .vertical-timeline-element-date{
+    color: #212529;
+  }
+}
+
+.languages-header {
+  color: white;
+  padding-bottom: 20px;
+  opacity: .7;
+}
+
+@media only screen and (max-width: 600px) {
+  .languages-header{
+    font-size: 30px;
+    color: white;
+    opacity: .7;
+  }
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+.progress-title{
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .progress-title{
+    margin-top: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .card-centered{
+    flex-direction: inherit !important;
+  }
+}
+
+.square {
+  height: 125px;
+  width: 125px;
+  background-color: orange;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-size {
+  width: 150px !important;
 }
   
   .banner-text {

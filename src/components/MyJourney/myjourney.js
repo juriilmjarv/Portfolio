@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import {Container, Row, Col, Card, Button, Nav, Image} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 import './myjourney.css'
 
 class About extends Component {

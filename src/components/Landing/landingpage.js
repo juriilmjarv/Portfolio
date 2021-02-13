@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-import profilepic from '../../assets/pictures/DSC01233.jpg';
-import {Container, Row, Col, Image, Button, Card} from 'react-bootstrap';
+import profilepic from '../../assets/pictures/profilepic1.jpg';
+import resume from '../../assets/resume/cv.pdf'
+import {Container, Row, Col, Image, Button, Card, CardDeck, ProgressBar} from 'react-bootstrap';
 import ReactFullpage from '@fullpage/react-fullpage';
+import FlipCard from 'react-flipcard';
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -39,105 +41,21 @@ class Landing extends Component {
                         <div className='section'>
                             <Container className='aboutContainer'>
                                 <Row>
-                                    <Col sm={4} className='alignRight'><Image className='circular--portrait'src={profilepic} roundedCircle></Image></Col>
+                                    <Col sm={4}><Image className='roundedCircle center' src={profilepic} /></Col>
                                     <Col sm={8} className='about-intro'>
                                         <h3>About Me</h3>
-                                        <p>Experienced Chief Technology Officer, Developer & Teacher with a demonstrated history of working in the internet industry. Skilled in PHP (Symfony & Laravel frameworks), TDD, continuous integration, WordPress, Linux System Administration, and Application Programming Interfaces.</p>
+                                        <p>Postgraduate Software Engineering student with a demonstrated history of working in the internet industry. Skilled in PHP (Symfony & Laravel frameworks), TDD, continuous integration, WordPress, Linux System Administration, and Application Programming Interfaces.</p>
                                         <p>Strong engineering professional with a Licence focused in Web Development from Université Claude Bernard Lyon 1.</p>
-                                        <p>My favourite stack : Laravel 5, Symfony Flex, PHPUnit, PHPQA, Micro-services, Docker, ReactJS, ReactNative with continuous integration on Gitlab.</p>
-                                        <Button className='float-left'>Download CV</Button>
-                                        <Button className='float-left'>Contact</Button>
+                                        <p>My favourite technologies: React, React Native, PHPUnit, PHPQA, Micro-services, Docker, ReactJS, ReactNative with continuous integration on Gitlab.</p>
+                                        <Button className='float-left about-btn' variant="success" style={{borderRadius: '0px'}} href={resume} target='_blank'>Resume</Button>
+                                        <Button className='float-left about-btn' style={{borderRadius: '0px'}} href="mailto:juura.ilmjarv@gmail.com">Contact</Button>
                                     </Col>
                                 </Row>
                             </Container>
                         </div>
                         <div className='section'>
-                            <Container style={{color: 'black'}}>
-                                <h1>I can say I am good at:</h1>
-                                <Row>
-                                    <Col sm  style={{padding: '10px'}}>
-                                        <Card className="card-centered">
-                                        <i className="fa fa-linkedin-square fa-lg" aria-hidden="true"/>
-                                            <Card.Body>
-                                            <Card.Title>JavaScript</Card.Title>
-                                            <Card.Text>
-                                                <span>ReactJS</span>
-                                                <br></br>
-                                                <span>React Native</span>
-                                                <br></br>
-                                                <span>ES6</span>
-                                            </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col sm  style={{padding: '10px'}}>
-                                        <Card className="card-centered">
-                                        <i className="fa fa-linkedin-square" aria-hidden="true"/>
-                                            <Card.Body>
-                                            <Card.Title>PHP</Card.Title>
-                                            <Card.Text>
-                                                <span>Wordpress</span>
-                                                <br></br>
-                                                <span>Scripts</span>
-                                            </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col sm  style={{padding: '10px'}}>
-                                        <Card className="card-centered">
-                                        <i className="fa fa-linkedin-square" aria-hidden="true"/>
-                                            <Card.Body>
-                                            <Card.Title>Other</Card.Title>
-                                            <Card.Text>
-                                                <span>SQL (relational and non-relational)</span>
-                                                <br></br>
-                                                <span>Bootstrap</span>
-                                                <br></br>
-                                                <span>Swift</span>
-                                                <br></br>
-                                                <span>REST API</span>
-                                            </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                            </Container>
-                        </div>
-                        <div className="section">
-                            <Container >
-                                <Row>
-                                    <Col md={{ span: 6, offset: 3 }}><Image className='circular--portrait'src={profilepic} roundedCircle></Image></Col>
-                                </Row>
-                                <Row>
-                                <div className="banner-text">
-                                        <h1>Software Developer</h1>
-                                        <hr/>
-                                        <p>HTML/CSS | Bootstrap | JavaScript | React | React Native</p>
-
-                                        <div className="social-links">
-                                            <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                                <i className="fa fa-linkedin-square" aria-hidden="true"/>
-                                            </a>
-                                            <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                                <i className="fa fa-github-square" aria-hidden="true"/>
-                                            </a>
-                                            <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                                                <i className="fa fa-linkedin-square" aria-hidden="true"/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </Row>
-                            </Container>
-                        </div>
-                        <div className="section">
-                            <Container className="heading-container">
-                                <Row>
-                                    <Col>
-                                        <p style={{color: 'white'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                    </Col>
-                                </Row>
-                            </Container>
-                            <VerticalTimeline>
+                            <h1 className='languages-header'>Education </h1>
+                            <VerticalTimeline className="textcolor">
                                 <VerticalTimelineElement
                                     className="vertical-timeline-element--education"
                                     date="2020 - 2021"
@@ -151,18 +69,6 @@ class Landing extends Component {
                                     </p>
                                 </VerticalTimelineElement>
                                 <VerticalTimelineElement
-                                    className="vertical-timeline-element--work"
-                                    date="Summer 2019"
-                                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                                    icon={<i className="fa fa-suitcase fa-lg icon" aria-hidden="true"/>}
-                                >
-                                    <h3 className="vertical-timeline-element-title">Junior Programmer Intern</h3>
-                                    <h4 className="vertical-timeline-element-subtitle">Ninja Kiwi, CA</h4>
-                                    <p>
-                                    User Experience, Visual Design
-                                    </p>
-                                </VerticalTimelineElement>
-                                <VerticalTimelineElement
                                     className="vertical-timeline-element--education"
                                     date="2016 - 2020"
                                     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
@@ -171,13 +77,202 @@ class Landing extends Component {
                                     <h3 className="vertical-timeline-element-title">University of Dundee</h3>
                                     <h4 className="vertical-timeline-element-subtitle">Dundee, UK</h4>
                                     <p>
-                                    BSc Applied Computing
+                                    BSc (Hons) Applied Computer Science
                                     </p>
                                 </VerticalTimelineElement>
                             </VerticalTimeline>
                         </div>
+                        <div className='section'>
+                            <Container style={{color: 'black'}}>
+                                <h1 className='languages-header'>I could say I am good at</h1>
+                                <CardDeck>
+                                        <Card className="card-centered">
+                                            <span style={{color: '#F0DB4F', padding: '10px'}}>
+                                                <i className="fab fa-js fa-4x" aria-hidden="true"/>
+                                            </span>
+                                            <Card.Body>
+                                            <Card.Title style={{color: '#F0DB4F'}}>JavaScript</Card.Title>
+                                            <Card.Text>
+                                                <span>ReactJS</span>
+                                                <br></br>
+                                                <span>React Native</span>
+                                                <br></br>
+                                                <span>ES6</span>
+                                            </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                        <Card className="card-centered">
+                                            <span style={{color: '#787CB5', padding: '10px'}}>
+                                                <i className="fab fa-php fa-4x" aria-hidden="true"/>
+                                            </span>
+                                            <Card.Body>
+                                            <Card.Title style={{color: '#787CB5'}}>PHP</Card.Title>
+                                            <Card.Text>
+                                                <span>Wordpress</span>
+                                                <br></br>
+                                                <span>Backend</span>
+                                            </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                        <Card className="card-centered">
+                                            <span style={{color: '#787CB5', padding: '10px'}}>
+                                                <i className="fas fa-database fa-4x" aria-hidden="true"/>
+                                            </span>
+                                            <Card.Body>
+                                            <Card.Title style={{color: '#787CB5'}}>Databases</Card.Title>
+                                            <Card.Text>
+                                                <span>MySQL</span>
+                                                <br></br>
+                                                <span>PostgreSQL</span>
+                                                <br></br>
+                                                <span>Realtime Database</span>
+                                            </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                        <Card className="card-centered">
+                                            <span style={{color: '#787CB5', padding: '10px'}}>
+                                                <i className="fas fa-ellipsis-h fa-4x" aria-hidden="true"/>
+                                            </span>
+                                            <Card.Body>
+                                            <Card.Title style={{color: '#787CB5'}}>Others</Card.Title>
+                                            <Card.Text>
+                                                <span>Java</span>
+                                                <br></br>
+                                                <span>Swift</span>
+                                                <br></br>
+                                                <span>Bootstrap</span>
+                                                <br></br>
+                                                <span>REST API</span>
+                                            </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                </CardDeck>
+                            </Container>
+                        </div>
                         <div className="section">
-                            <p>Section 3</p>
+                            <Container >
+                                <h1 className='languages-header' style={{textAlign: 'left'}}>I can speak</h1>
+                                <Row>
+                                    <Col md={3} className='col-centered'>
+                                        <h5 className='progress-title'>ESTONIAN</h5>
+                                        <p style={{textAlign:'left'}}>Native</p>
+                                    </Col>
+                                    <Col md={9}>
+                                        <ProgressBar animated now={100}/>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col md={3} className='col-centered'>
+                                        <h5 className='progress-title'>RUSSIAN</h5>
+                                        <p style={{textAlign:'left'}}>Native</p>
+                                    </Col>
+                                    <Col md={9}>
+                                        <ProgressBar animated now={90}/>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col md={3} className='col-centered'>
+                                        <h5 className='progress-title'>ENGLISH</h5>
+                                        <p style={{textAlign:'left'}}>Professional working proficiency</p>
+                                    </Col>
+                                    <Col md={9}>
+                                        <ProgressBar animated now={70}/>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col md={3} className='col-centered'>
+                                        <h5 className='progress-title'>GERMAN</h5>
+                                        <p style={{textAlign:'left'}}>Elementary proficiency</p>
+                                    </Col>
+                                    <Col md={9}>
+                                        <ProgressBar animated now={30}/>
+                                    </Col>
+                                </Row>
+                                
+                                
+                            </Container>
+                        </div>
+                        <div className="section">
+                            <Container>
+                                <Row style={{textAlign: 'left'}}>
+                                    <Col md={2}>
+                                        <FlipCard>
+                                            {/* The first child is used as the front of the card */}
+                                            <div className='square'>
+                                                <i className="fab fa-php fa-4x" aria-hidden="true"/>
+                                            </div>
+                                            {/* The second child is used as the back of the card */}
+                                            <div className='square'>Back</div>
+                                        </FlipCard>
+                                    </Col>
+                                    <Col md={2}>
+                                        <FlipCard>
+                                            {/* The first child is used as the front of the card */}
+                                            <div className='square'>
+                                                <i className="fab fa-php fa-4x" aria-hidden="true"/>
+                                            </div>
+                                            {/* The second child is used as the back of the card */}
+                                            <div className='square'>Back</div>
+                                        </FlipCard>
+                                    </Col>
+                                    <Col md={2}>
+                                        <FlipCard>
+                                            {/* The first child is used as the front of the card */}
+                                            <div className='square'>
+                                                <i className="fab fa-php fa-4x" aria-hidden="true"/>
+                                            </div>
+                                            {/* The second child is used as the back of the card */}
+                                            <div className='square'>Back</div>
+                                        </FlipCard>
+                                    </Col>
+                                    <Col md={2}>
+                                        <FlipCard>
+                                            {/* The first child is used as the front of the card */}
+                                            <div className='square'>
+                                                <i className="fab fa-php fa-4x" aria-hidden="true"/>
+                                            </div>
+                                            {/* The second child is used as the back of the card */}
+                                            <div className='square'>Back</div>
+                                        </FlipCard>
+                                    </Col>
+                                    <Col md={2}>
+                                        <FlipCard>
+                                            {/* The first child is used as the front of the card */}
+                                            <div className='square'>
+                                                <i className="fab fa-php fa-4x" aria-hidden="true"/>
+                                            </div>
+                                            {/* The second child is used as the back of the card */}
+                                            <div className='square'>Back</div>
+                                        </FlipCard>
+                                    </Col>
+                                    <Col md={2}>
+                                        <FlipCard>
+                                            {/* The first child is used as the front of the card */}
+                                            <div className='square'>
+                                                <i className="fab fa-php fa-4x" aria-hidden="true"/>
+                                            </div>
+                                            {/* The second child is used as the back of the card */}
+                                            <div className='square'>Back</div>
+                                        </FlipCard>
+                                    </Col>
+                                </Row>
+                            </Container>
+                        </div>
+                        <div className="section">
+                            <Container>
+                                <Row className='justify-content-center'>
+                                    <Button className='float-left about-btn btn-size' style={{borderRadius: '0px'}} onClick={() => fullpageApi.moveTo()}>Back to top ↑</Button>
+                                </Row>
+                                <Row className='justify-content-center'>
+                                    <Button className='float-left about-btn btn-size' variant="success" style={{borderRadius: '0px'}} href={'/projects'}>My projects</Button>
+                                </Row>
+                                <Row className='justify-content-center'>
+                                    <Button className='float-left about-btn btn-size' variant="success" style={{borderRadius: '0px'}} href={resume} target='_blank'>Resume</Button>
+                                </Row>
+                                <Row className='justify-content-center'>
+                                    <Button className='float-left about-btn btn-size' variant="success" style={{borderRadius: '0px'}} href={'/myjourney'}>My journey</Button>
+                                </Row>
+                            </Container>
                         </div>
                         </ReactFullpage.Wrapper>
                     );

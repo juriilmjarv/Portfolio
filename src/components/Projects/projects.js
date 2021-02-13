@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import post from '../../descriptions';
-import {Container, Row, Col, Card, Button, Nav} from 'react-bootstrap';
+import {Container, Row, Col, Card, Button, Nav, CardDeck} from 'react-bootstrap';
 import './projects.css';
 
 class Projects extends Component {
@@ -16,18 +16,16 @@ class Projects extends Component {
     return post.map(({ name, id, description }) => {
       if(id == topic){
         return (
-          <Col sm  style={{padding: '10px'}}>
-            <Card className="card-centered">
-              <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                  <Card.Title>{id}</Card.Title>
-                  <Card.Text>
-                    {description}
-                  </Card.Text>
-                  <Button href={'/projects/' + id} variant="primary">Go to project</Button>
-                </Card.Body>
-            </Card>
-          </Col>
+          <Card className="card-centered" style={{marginTop: '20px'}}>
+            <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Body>
+                <Card.Title>{id}</Card.Title>
+                <Card.Text>
+                  {description}
+                </Card.Text>
+                <Button href={'/projects/' + id} variant="primary">Go to project</Button>
+              </Card.Body>
+          </Card>
         )
       }
     })
@@ -63,9 +61,9 @@ class Projects extends Component {
               </Nav>
             </Container>
             <Container>
-              <Row>
-                {this.toggleCategories()}
-              </Row>
+                <CardDeck>
+                  {this.toggleCategories()}
+                </CardDeck>
             </Container>
         </div>
 

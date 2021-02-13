@@ -9,17 +9,6 @@
     height: 100%;
   
   }
-
-  .col{
-    flex: 0 0 33.3333333%;
-    max-width: 33.3333333%;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    display: flex;
-  }
-  
   
   .card-centered{
     float: none;
